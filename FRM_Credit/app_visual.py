@@ -14,7 +14,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     # Asegúrate de que este archivo esté en la misma carpeta
-    return joblib.load('model_lgbm_monotonic.pkl')
+    return joblib.load('FRM_Credit/model_lgbm_monotonic.pkl')
 
 try:
     model = load_model()
@@ -177,4 +177,5 @@ st.markdown(
     </div>
     """, 
     unsafe_allow_html=True
+
 )
